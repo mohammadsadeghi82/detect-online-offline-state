@@ -1,0 +1,93 @@
+/*Writen With Github @mohammadsadeghi82 */
+:root {
+    --awli-green: #4caf50;
+    --hail-white: #e6e6e6;
+    --white: #f6f6f6;
+    --gray: #d1d1d1;
+}
+* {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+body {
+    background-color: var(--hail-white);
+    position: relative;
+}
+.online {
+    width: 300px;
+    height: 60px;
+    background-color: var(--white);
+    transform: translate(-50%,50%);
+    top: 50%;
+    left: 50%;
+    border-radius: 7px;
+    box-shadow: 3px 5px 5px 1px #cccccc;
+    border-left: 5px solid var(--awli-green);
+    position: relative;
+    display: none;
+    transition: 0.3s;
+}
+.online .left {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    inset: 15% 2%;
+    border-radius: 50%;
+    background-color: var(--awli-green);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 2rem;
+}
+.online .main {
+    width: 70%;
+    height: 100%;
+    position: absolute;
+    left: calc(40px + 3%);
+    line-height: 20px;
+}
+.online .main h3 {
+    font-size: 1rem;
+    margin: 5% 3% 0;
+}
+.main p {
+    color: #969696;
+    margin-left: 3%;
+    font-size: 14px;
+}
+.online .right {
+    width: 15%;
+    height: 100%;
+    position: absolute;
+    left: calc(40px + 73%);
+    border-top-right-radius: 7px;
+    border-bottom-right-radius: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.online .right .bi {
+    width: 30px;
+    height: 30px;
+    background-color: var(--gray);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.offline {
+    display: none;
+    border-left-color: var(--gray);
+}
+.offline .off {
+    background-color: var(--gray);
+}
+.offline p {
+    font-size: 9px;
+}

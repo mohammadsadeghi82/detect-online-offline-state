@@ -1,0 +1,36 @@
+<!--Writen With Github @mohammadsadeghi82-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Detect Online/Offline</title>
+</head>
+<body onoffline="offlineHandler()" ononline="onlineHandler()">
+    <div class="online">
+        <div class="left"><img src="./wifi-on.png" alt=""></div>
+        <div class="main">
+            <h3 class="wifi-notif">You`re online now</h3>
+            <p class="caption-notif">Hurray! einternet is connected</p>
+        </div>
+        <div class="right">
+            <span class="bi bi-x"></span>
+        </div>
+    </div>
+    <!--offline-->
+    <div class="online offline">
+        <div class="left off"><img src="./wifi-off.png" alt=""></div>
+        <div class="main">
+            <h3 class="wifi-notif">You`re offline now</h3>
+            <p class="caption-notif off-capt">Hurray! einternet is disconnected</p>
+        </div>
+        <div class="right">
+            <span class="bi bi-x"></span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
